@@ -1,0 +1,12 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+qdrant_data/
+test_pdf.py
+test_reranker.py
+test_retriever.py
+test_rag.py
+test_query_enhancer.py
+test_embeddings.py

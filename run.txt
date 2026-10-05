@@ -1,0 +1,35 @@
+Always open the docker if the docker run "docker run -p 6333:6333 qdrant/qdrant"
+and then open new terminal and run/create the environment 
+
+
+
+docker --version
+
+docker ps
+
+docker start qdrant
+
+curl http://localhost:6333 or curl http://127.0.0.1:6333
+
+docker run -p 6333:6333 qdrant/qdrant
+
+cd C:\AI_Healthcare_Information_Assistant_RAG //path
+
+python -m venv .venv
+
+.venv\Scripts\Activate.ps1
+
+python -m pip install --upgrade pip
+
+pip install -r requirements.txt
+
+pip install sentence-transformers
+
+python -c "from app.config import NUGEN_API_KEY; print('NUgen configured:', bool(NUGEN_API_KEY))"
+
+docker ps
+
+python -c "import requests; r=requests.get('http://localhost:6333'); print('Qdrant status:', r.status_code); print(r.text)"
+
+uvicorn app.main:app --reload
+
